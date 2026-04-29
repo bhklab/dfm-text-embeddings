@@ -22,16 +22,17 @@ env.PROCDATA = "${PIXI_PROJECT_ROOT}/data/procdata"
 env.RESULTS = "${PIXI_PROJECT_ROOT}/data/results"
 env.SCRIPTS = "${PIXI_PROJECT_ROOT}/workflow/scripts"
 
+
 [dependencies]
-python = ">=3.12"
+python = ">=3.14.4,<3.15"
 ipython = "*"
 ipykernel = "*"
 jupyterlab = "*"
 pip = "*"
+gensim = ">=4.4.0,<5"
 
 [pypi-dependencies]
 damply = ">=0.10.0, <0.11"
-
 [tasks]
 example_script = {cmd="python $SCRIPTS/example_script.py", description="Run an example script"}
 
