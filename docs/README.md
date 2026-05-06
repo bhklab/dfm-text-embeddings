@@ -40,6 +40,12 @@ pixi install
 
 Navigate to the [ORCESTRA site](https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326) for the HDDv2 and download the  `colData.csv` to the `data/rawdata/` folder. 
 
+
+## Understanding the Data
+The data used is the collection of approx 500k compounds from the Harmonized Drug Dataset (HDD). The embeddings here are constructed using the pre-trained [SMILES](https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System)-based language model called [ChemBERTa](https://arxiv.org/pdf/2010.09885). 
+
+ChemBERTA provides *token-level* embeddings, meaning a vector for each character in a SMILES strings. The final embeddings provided here are the average embeddings across the entire string and have 768 dimensions. 
+
 ## Running the Code
 
 Once you have installed the repository and the pixi environment navigate to the scripts folder `workflow/scripts/` and execute the command

@@ -39,6 +39,8 @@ for idx, row in (pbar:= tqdm.tqdm(mol_data.iterrows(),total = mol_data.shape[0])
     mol_df['Molecule.Name'].append(row['Molecule.Name'])
     mol_df['Pubchem.CID'].append(int(row['Pubchem.CID']))
     mol_df['ChemBERTa.Embedding'].append(avg_emb)
+    if MOA_ONLY:
+        mol_df['Mechanism.of.Action'].append(row['Mechanism.of.Action'])
 
 
 mol_df = pd.DataFrame(mol_df)
