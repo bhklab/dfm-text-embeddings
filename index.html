@@ -50,7 +50,9 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#data-collection">Data Collection</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-code">Running the Code</a>
     </li>
     </ul>
                 </li>
@@ -116,8 +118,12 @@ If you haven't installed it yet, <a href="https://pixi.sh/latest/">follow these 
 </ol>
 <pre><code class="language-bash">pixi install
 </code></pre>
-<h2 id="documentation">Documentation</h2>
-<p>Click <a href="https://bhklab.github.io/dfm-text-embeddings">here</a> to view the full documentation.</p>
+<h2 id="data-collection">Data Collection</h2>
+<p>Navigate to the <a href="https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326">orcestra site</a> for the HDDv2 and download the  <code>colData.csv</code> to the <code>data/rawdata/</code> folder. </p>
+<h2 id="running-the-code">Running the Code</h2>
+<p>Once you have installed the repository and the pixi environment navigate to the scripts folder <code>workflow/scripts/</code> and execute the command</p>
+<p><code>pixi run 'python3 make-chemberta-embeddings.py'</code></p>
+<p>By default this will only generate embeddings for the ~2000 compounds for which we have MOA data. Go to the file and set <code>MOA_ONLY</code> to <code>False</code> to get embeddings for all compounds. </p>
               
             </div>
           </div><footer>
@@ -170,5 +176,5 @@ If you haven't installed it yet, <a href="https://pixi.sh/latest/">follow these 
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-04-29 18:40:03.184402+00:00
+Build Date UTC : 2026-05-06 21:03:30.107043+00:00
 -->
