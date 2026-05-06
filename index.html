@@ -52,6 +52,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#data-collection">Data Collection</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#understanding-the-data">Understanding the Data</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#running-the-code">Running the Code</a>
     </li>
     </ul>
@@ -120,6 +122,9 @@ If you haven't installed it yet, <a href="https://pixi.sh/latest/">follow these 
 </code></pre>
 <h2 id="data-collection">Data Collection</h2>
 <p>Navigate to the <a href="https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326">ORCESTRA site</a> for the HDDv2 and download the  <code>colData.csv</code> to the <code>data/rawdata/</code> folder. </p>
+<h2 id="understanding-the-data">Understanding the Data</h2>
+<p>The data used is the collection of approx 500k compounds from the Harmonized Drug Dataset (HDD). The embeddings here are constructed using the pre-trained <a href="https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System">SMILES</a>-based language model called <a href="https://arxiv.org/pdf/2010.09885">ChemBERTa</a>. </p>
+<p>ChemBERTA provides <em>token-level</em> embeddings, meaning a vector for each character in a SMILES strings. The final embeddings provided here are the average embeddings across the entire string and have 768 dimensions. </p>
 <h2 id="running-the-code">Running the Code</h2>
 <p>Once you have installed the repository and the pixi environment navigate to the scripts folder <code>workflow/scripts/</code> and execute the command</p>
 <p><code>pixi run 'python3 make-chemberta-embeddings.py'</code></p>
@@ -176,5 +181,5 @@ If you haven't installed it yet, <a href="https://pixi.sh/latest/">follow these 
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-05-06 21:05:13.424562+00:00
+Build Date UTC : 2026-05-06 21:16:58.886982+00:00
 -->
