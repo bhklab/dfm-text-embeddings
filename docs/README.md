@@ -38,7 +38,7 @@ pixi install
 
 ## Data Collection
 
-Navigate to the [orcestra site](https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326) for the HDDv2 and download the  `colData.csv` to the `data/rawdata/` folder. 
+Navigate to the [ORCESTRA site](https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326) for the HDDv2 and download the  `colData.csv` to the `data/rawdata/` folder. 
 
 ## Running the Code
 
