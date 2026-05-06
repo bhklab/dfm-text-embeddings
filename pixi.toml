@@ -30,6 +30,8 @@ ipykernel = "*"
 jupyterlab = "*"
 pip = "*"
 gensim = ">=4.4.0,<5"
+transformers = ">=5.8.0,<6"
+pytorch = ">=2.10.0,<3"
 
 [pypi-dependencies]
 damply = ">=0.10.0, <0.11"

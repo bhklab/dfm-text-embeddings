@@ -35,6 +35,18 @@ If you haven't installed it yet, [follow these instructions](https://pixi.sh/lat
 pixi install
 ```
 
-## Documentation
 
-Click [here](https://bhklab.github.io/dfm-text-embeddings) to view the full documentation.
+## Data Collection
+
+Navigate to the [orcestra site](https://www.orcestra.ca/annotations/69f4a753f9dd88b7003f0326) for the HDDv2 and download the  `colData.csv` to the `data/rawdata/` folder. 
+
+## Running the Code
+
+Once you have installed the repository and the pixi environment navigate to the scripts folder `workflow/scripts/` and execute the command
+
+```pixi run 'python3 make-chemberta-embeddings.py'```
+
+By default this will only generate embeddings for the ~2000 compounds for which we have MOA data. Go to the file and set `MOA_ONLY` to `False` to get embeddings for all compounds. 
+
+
+
